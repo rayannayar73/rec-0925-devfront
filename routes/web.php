@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ravelojaona-completez-votre-reservation', [ReservationController::class, 'completeReservation'])->name('complete-reservation');
+Route::get('/ravelojaona-paiement', [ReservationController::class, 'payment'])->name('payment');
