@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="bg-white">
 <div class="container mx-auto px-20 py-8">
     <h1 class="text-[32px] font-bold text-gray-800 mb-4">Confirmer et payer</h1>
 
@@ -191,4 +192,6 @@
         </div>
     </div>
 </div>
+</div>
+
 @endsection

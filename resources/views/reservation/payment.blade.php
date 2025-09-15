@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mx-auto px-20 py-8">
+<div class="min-h-screen flex flex-col">
+<div class="container mx-auto px-20 py-8 flex-1">
     <h1 class="text-2xl font-bold text-gray-600 mb-8">Complétez votre réservation</h1>
 
     <!-- Pricing Cards Container -->
@@ -186,4 +187,36 @@
         </label>
     </form>
 </div>
+<!-- Sticky Footer -->
+<div class="fixed bottom-0 left-0 right-0 bg-[#2A2A2A] py-4 mt-auto">
+    <div class="container mx-auto px-20 flex items-center justify-between">
+        <!-- Test Details -->
+        <div class="bg-white rounded-lg p-6 flex items-center gap-4">
+            <div class="p-3">
+                <svg class="w-6 h-6 text-[#C8286C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+            </div>
+            <div class="text-gray-800">
+                <h3 class="text-lg font-bold">Test psychotechnique le 28 mars à 14:00</h3>
+                <p class="text-gray-600">15 rue de la république Montgeron 91230</p>
+            </div>
+        </div>
+        <!-- Total and Button -->
+        <div class="flex flex-col gap-4">
+            <div class="flex justify-between gap-20 items-center text-white">
+                <span class="text-xl font-semibold">Total</span>
+                <span class="text-4xl font-bold">135€</span>
+            </div>
+            <button type="submit" class="w-full bg-[#C8286C] text-white px-8 py-3 rounded-lg font-bold text-lg flex items-center justify-center gap-2 hover:bg-[#A32058] transition-colors">
+                Suivant
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
 @endsection
