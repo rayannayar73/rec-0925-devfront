@@ -2,34 +2,35 @@
 
 @section('content')
 <div class="container mx-auto px-20 py-8">
-    <h1 class="text-[32px] font-bold text-gray-800 mb-8">Complétez votre réservation</h1>
+    <h1 class="text-2xl font-bold text-gray-600 mb-8">Complétez votre réservation</h1>
 
     <!-- Pricing Cards Container -->
     <form class="grid grid-cols-3 gap-8">
         <!-- Basic Card -->
         <label class="relative cursor-pointer">
             <input type="radio" name="plan" value="basic" class="peer sr-only">
-            <div class="bg-white rounded-3xl shadow-lg overflow-hidden peer-checked:ring-2 peer-checked:ring-gray-400 h-[640px]">
+            <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-gray-400 h-[640px]">
                 <!-- Header -->
-                <div class="bg-gray-100 px-6 py-4">
+                <div class="bg-gray-100 px-6 py-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
                     <h2 class="text-2xl font-bold text-center">Basic</h2>
                     <p class="text-gray-600 text-center">Votre test psychotechnique simple</p>
                 </div>
                 
                 <div class="px-6 py-8">
                     <div class="text-center mb-8">
-                        <span class="text-6xl font-bold inline-flex items-center">+0€</span>
+                        <span class="text-5xl font-bold inline-flex items-center">+0€</span>
                     </div>
 
-                    <div class="bg-gray-50 rounded-xl p-4 mb-8">
-                        <div class="flex items-center justify-center gap-3">
-                            <div class="w-5 h-5 border-2 border-gray-300 rounded-full peer-checked:border-gray-600 flex items-center justify-center">
-                                <div class="hidden peer-checked:block w-3 h-3 bg-gray-600 rounded-full"></div>
-                            </div>
-                            <span class="text-lg font-semibold">Sélectionner</span>
+                    <div class="flex justify-center mb-8">
+                        <div class="inline-flex items-center gap-3 bg-gray-50 rounded-xl px-6 py-3 shadow-sm">
+                            <div class="peer-checked:hidden w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                            <svg class="hidden peer-checked:block w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-xl font-bold">Sélectionner</span>
                         </div>
                     </div>
-
+                    <hr class="border-gray-300 my-4"/>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,28 +58,29 @@
         <!-- Assurance Card -->
         <label class="relative cursor-pointer">
             <input type="radio" name="plan" value="assurance" class="peer sr-only">
-            <div class="bg-white rounded-3xl shadow-lg overflow-hidden peer-checked:ring-2 peer-checked:ring-green-500 h-[640px]">
+            <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-green-500 h-[640px]">
                 <!-- Header -->
-                <div class="bg-green-500 px-6 py-4">
+                <div class="bg-green-500 px-6 py-4 relative shadow-[0_4px_10px_rgba(255,255,255,0.1)]">
                     <h2 class="text-2xl font-bold text-center text-white">Assurance</h2>
                     <p class="text-white text-center">Votre test psychotechnique sans stress</p>
                 </div>
                 
                 <div class="px-6 py-8">
                     <div class="text-center mb-4">
-                        <span class="text-6xl font-bold inline-flex items-center">+40€</span>
+                        <span class="text-5xl font-bold inline-flex items-center">+40€</span>
                         <p class="text-sm text-gray-500 mt-2">A peine le prix d'un resto</p>
                     </div>
 
-                    <div class="bg-green-500 rounded-xl p-4 mb-8">
-                        <div class="flex items-center justify-center gap-3 text-white">
-                            <div class="w-5 h-5 border-2 border-white rounded-full peer-checked:bg-white flex items-center justify-center">
-                                <div class="hidden peer-checked:block w-3 h-3 bg-green-500 rounded-full"></div>
-                            </div>
-                            <span class="text-lg font-semibold">Sélectionner</span>
+                    <div class="flex justify-center mb-8">
+                        <div class="inline-flex items-center gap-3 bg-green-500 rounded-xl px-6 py-3 shadow-sm text-white">
+                            <div class="peer-checked:hidden w-5 h-5 border-2 border-white rounded-full"></div>
+                            <svg class="hidden peer-checked:block w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-xl font-bold">Sélectionner</span>
                         </div>
                     </div>
-
+                    <hr class="border-gray-300 my-4"/>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +98,7 @@
                             <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                             </svg>
-                            <span>Repassez votre test pour 0€ (si test échoué)</span>
+                            <span><b>Repassez votre test pour 0€ (si test échoué)</b></span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,28 +120,29 @@
         <!-- Complet Card -->
         <label class="relative cursor-pointer">
             <input type="radio" name="plan" value="complet" class="peer sr-only">
-            <div class="bg-white rounded-3xl shadow-lg overflow-hidden peer-checked:ring-2 peer-checked:ring-[#476285] h-[640px]">
+            <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-[#476285] h-[640px]">
                 <!-- Header -->
-                <div class="bg-[#476285] px-6 py-4">
+                <div class="bg-[#476285] px-6 py-4 relative shadow-[0_4px_10px_rgba(255,255,255,0.1)]">
                     <h2 class="text-2xl font-bold text-center text-white">Complet</h2>
                     <p class="text-white text-center">Votre test psychotechnique tout compris</p>
                 </div>
                 
                 <div class="px-6 py-8">
                     <div class="text-center mb-4">
-                        <span class="text-6xl font-bold inline-flex items-center">+60€</span>
+                        <span class="text-5xl font-bold inline-flex items-center">+60€</span>
                         <p class="text-sm text-gray-500 mt-2">A peine le prix de 4 pizzas</p>
                     </div>
 
-                    <div class="bg-[#476285] rounded-xl p-4 mb-8">
-                        <div class="flex items-center justify-center gap-3 text-white">
-                            <div class="w-5 h-5 border-2 border-white rounded-full peer-checked:bg-white flex items-center justify-center">
-                                <div class="hidden peer-checked:block w-3 h-3 bg-[#476285] rounded-full"></div>
-                            </div>
-                            <span class="text-lg font-semibold">Sélectionner</span>
+                    <div class="flex justify-center mb-8">
+                        <div class="inline-flex items-center gap-3 bg-[#476285] rounded-xl px-6 py-3 shadow-sm text-white">
+                            <div class="peer-checked:hidden w-5 h-5 border-2 border-white rounded-full"></div>
+                            <svg class="hidden peer-checked:block w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-xl font-bold">Sélectionner</span>
                         </div>
                     </div>
-
+                    <hr class="border-gray-300 my-4"/>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6 text-[#476285]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,13 +154,13 @@
                             <svg class="w-6 h-6 text-[#476285]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span>Annulation jusqu'à 24 heures</span>
+                            <span><b>Annulation jusqu'à 24 heures</b></span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6 text-[#476285]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                             </svg>
-                            <span>Repassez votre test pour 0€ (si test échoué)</span>
+                            <span><b>Repassez votre test pour 0€ (si test échoué)</b></span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
                             <svg class="w-6 h-6 text-[#476285]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
