@@ -12,9 +12,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased bg-white">
+<body class="font-sans antialiased bg-gray-100">
     <!-- Main Header with Logo and Title -->
-    <div class="w-full shadow-[0_2px_4px_0_rgba(0,0,0,0.10)]">
+    <div class="w-full bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.10)]">
         <!-- Logo and Company Name -->
         <div class="container mx-auto px-20 py-6">
             <div class="flex items-center">
@@ -33,7 +33,7 @@
     </div>
 
     <!-- Title Section with Shadow on top and bottom -->
-    <div class="w-full shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_4px_6px_-1px_rgba(0,0,0,0.1)] relative">
+    <div class="w-full bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_4px_6px_-1px_rgba(0,0,0,0.1)] relative">
         <div class="container mx-auto px-20 py-8">
             <h1 class="text-[28px] font-semibold text-[#36578A]">Test psychotechnique pour permis de conduire à Montgeron</h1>
         </div>
