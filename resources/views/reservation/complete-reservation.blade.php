@@ -24,10 +24,12 @@
 
                     <div class="flex justify-center mb-8">
                         <div class="inline-flex items-center gap-3 bg-gray-50 rounded-xl px-6 py-3 shadow-sm">
-                            <div class="peer-checked:hidden w-5 h-5 border-2 border-gray-300 rounded-full"></div>
-                            <svg class="hidden peer-checked:block w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
+                            <div class="relative w-4 h-4">
+                                <div class="absolute inset-0 border-2 border-gray-300 rounded-full [input:checked~*_&]:bg-gray-300"></div>
+                                <svg class="absolute inset-0 w-4 h-4 p-0.5 text-white opacity-0 [input:checked~*_&]:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
                             <span class="text-xl font-semibold">Sélectionner</span>
                         </div>
                     </div>
@@ -59,9 +61,9 @@
         <!-- Assurance Card -->
         <label class="relative cursor-pointer">
             <input type="radio" name="plan" value="assurance" class="peer sr-only">
-            <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-green-500 h-[640px]">
+            <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-[#0DBC0D] h-[640px]">
                 <!-- Header -->
-                <div class="bg-green-500 px-6 py-4 relative shadow-[0_4px_10px_rgba(255,255,255,0.2)]">
+                <div class="bg-[#0DBC0D] px-6 py-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.2)]">
                     <h2 class="text-2xl font-semibold text-center text-white">Assurance</h2>
                     <p class="text-white text-center">Votre test psychotechnique sans stress</p>
                 </div>
@@ -73,42 +75,44 @@
                     </div>
 
                     <div class="flex justify-center mb-8">
-                        <div class="inline-flex items-center gap-3 bg-green-500 rounded-xl px-6 py-3 shadow-sm text-white">
-                            <div class="peer-checked:hidden w-5 h-5 border-2 border-white rounded-full"></div>
-                            <svg class="hidden peer-checked:block w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
+                        <div class="inline-flex items-center gap-3 bg-[#0DBC0D] rounded-xl px-6 py-3 shadow-sm text-white">
+                            <div class="relative w-4 h-4">
+                                <div class="absolute inset-0 border-2 border-white rounded-full [input:checked~*_&]:bg-white"></div>
+                                <svg class="absolute inset-0 w-4 h-4 p-0.5 text-[#0DBC0D] opacity-0 [input:checked~*_&]:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
                             <span class="text-xl font-semibold">Sélectionner</span>
                         </div>
                     </div>
                     <hr class="border-gray-300 my-4"/>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 text-gray-700">
-                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-[#0DBC0D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/>
                             </svg>
                             <span>Entrainement illimité et gratuit</span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
-                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-[#0DBC0D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             <span>Annulation jusqu'à 48 heures</span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
-                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-[#0DBC0D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                             </svg>
                             <span><b>Repassez votre test pour 0€ (si test échoué)</b></span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
-                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-[#0DBC0D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                             </svg>
                             <span>Recevez votre test le jour j</span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-700">
-                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-[#0DBC0D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                             </svg>
                             <span>Livret de préparation au test psychotechnique</span>
@@ -123,7 +127,7 @@
             <input type="radio" name="plan" value="complet" class="peer sr-only">
             <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden peer-checked:ring-2 peer-checked:ring-[#476285] h-[640px]">
                 <!-- Header -->
-                <div class="bg-[#476285] px-6 py-4 relative shadow-[0_4px_10px_rgba(255,255,255,0.2)]">
+                <div class="bg-[#476285] px-6 py-4 relative shadow-[0_4px_10px_rgba(71,98,133,0.2)]">
                     <h2 class="text-2xl font-semibold text-center text-white">Complet</h2>
                     <p class="text-white text-center">Votre test psychotechnique tout compris</p>
                 </div>
@@ -136,10 +140,12 @@
 
                     <div class="flex justify-center mb-8">
                         <div class="inline-flex items-center gap-3 bg-[#476285] rounded-xl px-6 py-3 shadow-sm text-white">
-                            <div class="peer-checked:hidden w-5 h-5 border-2 border-white rounded-full"></div>
-                            <svg class="hidden peer-checked:block w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
+                            <div class="relative w-4 h-4">
+                                <div class="absolute inset-0 border-2 border-white rounded-full [input:checked~*_&]:bg-white"></div>
+                                <svg class="absolute inset-0 w-4 h-4 p-0.5 text-[#476285] opacity-0 [input:checked~*_&]:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
                             <span class="text-xl font-semibold">Sélectionner</span>
                         </div>
                     </div>
