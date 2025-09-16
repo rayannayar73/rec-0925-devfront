@@ -89,7 +89,7 @@
                         <div class="flex items-center gap-6">
                             <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
                             <div class="w-[100px] h-8 flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="Credit Card" class="h-8 object-contain">
+                                <img src="/images/carte-bancaire.png" alt="Credit Card" class="h-16 object-cover">
                             </div>
                             <span class="font-semibold text-xl">Carte bancaire</span>
                         </div>
@@ -98,7 +98,7 @@
                         <div class="flex items-center gap-6">
                             <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
                             <div class="w-[100px] h-8 flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Apple_Pay_logo.svg/2560px-Apple_Pay_logo.svg.png" alt="Apple Pay" class="h-8 object-contain">
+                                <img src="/images/apple-pay.png" alt="Apple Pay" class="h-16 object-cover">
                             </div>
                             <span class="font-semibold text-xl">Apple Pay</span>
                         </div>
@@ -107,7 +107,7 @@
                         <div class="flex items-center gap-6">
                             <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
                             <div class="w-[100px] h-8 flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal" class="h-8 object-contain">
+                                <img src="/images/paypal.png" alt="PayPal" class="h-16 object-cover">
                             </div>
                             <span class="font-semibold text-xl">PayPal</span>
                         </div>
@@ -116,7 +116,7 @@
                         <div class="flex items-center gap-6">
                             <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
                             <div class="w-[100px] h-8 flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/5/5b/Alma_Logo.svg/2560px-Alma_Logo.svg.png" alt="Alma" class="h-8 object-contain">
+                                <img src="/images/alma.png" alt="Alma" class="h-16 object-cover">
                             </div>
                             <span class="font-semibold text-xl">Alma</span>
                         </div>
