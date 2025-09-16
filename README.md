@@ -1,46 +1,68 @@
 # Test technique — Dev Front
 
-## Objectif
-Reproduire fidèlement l’interface fournie (**Adobe XD**) **au pixel près**.  
-En cas d’incohérence visuelle, ajustez pour obtenir une **vue harmonisée** (alignements, hiérarchie visuelle, rythme vertical) et **documentez** vos arbitrages dans le README (section « Notes de design »).
+## Instructions de lancement/build
 
-🔗 **Maquettes** : https://xd.adobe.com/view/47f5bba9-a512-492c-85c6-d4fc4ddebc60-12a6/
+### Installer les dépendances JavaScript
+```bash
+npm install
+```
 
----
+### Lancement
 
-## Stack & périmètre
-- Réaliser les pages **en HTML et Tailwind CSS uniquement** (Tailwind est **déjà installé**).
-- **Aucune autre dépendance** ne devra être installée.
-- Ces pages sont **statiques** : **aucun besoin de base de données**.
+1. Démarrer le serveur Laravel
+```bash
+php artisan serve
+```
 
----
+2. Dans un autre terminal, lancer Vite pour le front-end
+```bash
+npm run dev
+```
 
-## Modalités de dépôt
-- Travaillez **uniquement sur un fork GitHub** de notre dépôt.
-- **Aucune branche** ne devra être créée : utilisez la **branche principale** de votre fork.
+## Liens
+1. "/ravelojaona-completez-votre-reservation"
+2. "/ravelojaona-paiement"
 
----
+## Notes de design
 
-## Routing requis (personnalisé par candidat)
-Les URL doivent être personnalisées par candidat selon le format :  
-`/{nom-de-famille}-{slug-de-la-page}`
+### Polices de caractères
+- Police principale : Poppins
+- Police de fallback : Montserrat
+- Fallback système : sans-serif
 
-**Règles :**
-- **nom-de-famille** : en minuscules, accents supprimés, espaces → « - ».  
-  *Ex.* « Dupré-Lefèvre » → `dupre-lefevre`.
-- **slug-de-la-page** : en minuscules, accents supprimés, espaces → « - » ; caractères autorisés : `a–z`, `0–9`, `-`.  
-  Utiliser **un seul tiret** entre les segments ; **aucun tiret** en début/fin.
+### Couleurs
+- Vert principal : #0DBC0D
+- Bleu principal : #476285
+- Rose/Rouge : #C8286C
+- Gris foncé : #2A2A2A
 
-**Exemple avec le candidat *Dumoulin Adrien***
-- Page 1 : `/dumoulin-completez-votre-reservation`
-- Page 2 : `/dumoulin-paiement`
+### Incohérences et arbitrages
+Je n'avais pas les photos originales pour la page de paiement ni du Logo, pour cela j'ai fait des screenshoot pour chaque image et je les ai intégré dans les pages.
 
----
+De même pour les icones, j'ai utilisé une source différente du projet au lieu de faire des screenchoot pour les icones par peur de déranger l'aspect globale du projet et pour garder un design plus compact et plus fluide.
 
-## Livrables attendus
-- Lien GitHub de votre **fork public** (historique de commits propre et régulier).
-- **README** à la racine incluant :
-    - **Instructions de lancement/build** si différentes du projet de base.
-    - Section **« Notes de design »** : incohérences rencontrées, arbitrages, fallback de police si nécessaire.
-- *(Optionnel)* **Captures comparatives** montrant vos vérifications de pixel perfect.
-- **Temps passé** (indicatif).
+## Captures d'écran comparatives
+
+### Logo du site (image + textes)
+![Les textes du logo ne sont pas des images, je les ai intégré suivant le spacing et le format dans le logo d'origine](docs/screenshots/logo.png)
+
+### Section sticky recapitulatif
+![La section recapitulatif est sticky comme dans la maquette](docs/screenshots/recap.png)
+
+### Section sticky footer
+![Le footer est aussi sticky comme dans la maquette](docs/screenshots/footer.png)
+
+### Composants
+#### Card Shadow
+![Ajout des shadow dans le component card](docs/screenshots/card-shadow.png)
+
+#### Card séléctionné (border + checked icon)
+![Border, Boutton, icone pour la carde séléctionnée](docs/screenshots/card-selected.png)
+
+#### Textes en gras
+![Les textes spécifiques sont en gras comme dans la maquette](docs/screenshots/card-bold.png)
+
+## Temps passé
+Codage: 19h48 - 22h39 (2h51)
+Mise au point: 5h56 - 7h00 (1h04)
+Total: 3h55
