@@ -6,13 +6,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased bg-gray-100">
+<body class="font-sans antialiased bg-gray-100" style="font-family: 'Poppins', 'Montserrat', sans-serif;">
     <!-- Main Header with Logo and Title -->
     <div class="w-full bg-white shadow-[0_2px_4px_0_rgba(0,0,0,0.10)]">
         <!-- Logo and Company Name -->
